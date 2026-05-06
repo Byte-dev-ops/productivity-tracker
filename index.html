@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Productivity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Productivity Tracker</h1>
+
+        <!-- Task Input -->
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <button onclick="addTask()">Add</button>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+        <!-- Progress -->
+        <h3 id="progress">Progress: 0% (0/0 tasks completed)</h3>
+
+        <!-- Timer -->
+        <div class="timer">
+            <h2 id="time">00:00:00</h2>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
